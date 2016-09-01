@@ -9,6 +9,14 @@ https://content.dropboxapi.com/2/files/upload
 --no-check-certificate 
 --header "Dropbox-API-Arg: {\"path\": \"/myfile.txt\",\"mode\": \"add\",\"autorename\": true,\"mute\": false}"
 ```
+download:
+```
+wget https://content.dropboxapi.com/2/files/download 
+  --header "Authorization: Bearer your_access_token" 
+  --header "Dropbox-API-Arg: {\"path\": \"/myfile.txt\"}" 
+  --no-check-certificate
+```
+"myfile.txt" is your file name.
 
 Just replace "your_access_token" with access token string for your app generated at 
 https://www.dropbox.com/developers/apps
